@@ -23,7 +23,7 @@ int main()
     printf("\nClient ready....\n");
     connect(sockfd, (struct sockaddr *)&server, sizeof(server));
 
-    for(;;)
+    while(1)
     {
         printf("\nClient:");
         gets(b2);
