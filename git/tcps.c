@@ -28,7 +28,7 @@ int main()
     n=sizeof(client);
     connfd = accept(sockfd, (struct sockaddr *) &client, &n);
   
-    for(;;)
+    while(1)
     {
         recv(connfd, b1, sizeof(b1), 0);
        
